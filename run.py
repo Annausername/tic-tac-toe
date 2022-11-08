@@ -81,5 +81,11 @@ def cls():
     """
     os.system('cls' if os.name == 'nt' else 'clear')
 
+def wrong_input(choice):
+    """
+    Message for incorrect input values.
+    """
+    print('Please enter the required option.')
+
 
 main_menu()
