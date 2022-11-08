@@ -220,6 +220,11 @@ def start_game():
         board[x] = player
         draw_board()
         play = who_won(player, computer)
+        o = computer_move(computer, player, board)
+        print(f'Computer hits: {o}')
+        board[o] = computer
+        draw_board()
+        play = who_won(player, computer)
 
     
 main_menu()
