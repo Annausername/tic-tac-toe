@@ -1,31 +1,16 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# TIC_TAC_TOE
 
-Welcome Anna, 
+Tic-Tac-Toe is a game in which two players (player vs computer) seek in alternate turns to complete a row, a column, or a diagonal with either three o's or three x's drawn in the spaces of a grid of nine squares; noughts and crosses. In this particular game player is an 'x' by default and the computer is 'o'.
 
-This is the Code Institute student template for deploying your third portfolio project,  the Python command-line project. The last update to this file was: **August 17,  2021**
+![Main](https://github.com/Annausername/tic-tac-toe/blob/main/media/main.png)
 
-## Reminders
+The live link can be found here - https://tic-tac-toe-anna.herokuapp.com/
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## UX
 
-## Creating the Heroku app
+__As a player__
 
-When you create the app,  you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+- I want to play a game with clear and easy instructions;
+- I want to be able to see my scores;
+- I want to be able to play the game again or quit easily.
 
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials,  such as in the Love Sandwiches project,  you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
