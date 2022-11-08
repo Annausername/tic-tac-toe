@@ -113,11 +113,37 @@ def draw_board():
     print('--+--+--')
     print(board[7] + ' | ' + board[8] + '| ' + board[9])
     print('\n')
-draw_board()
 
+def player_move(hit):
+    """
+    Gives a player an option to make the move.
+    """
+    while True:
+        try:
+            move = int(input('Hit the spot between 1 and 9: \n'))
+            if move in range(1, 10):
+                if board[move] == ' ':
+                    return move
+                else:
+                    print("Aww.. This cell is occupied.")
+            else:
+                print('No cheating! The number should be from 1 to 9. Hit again: \n')
+ 
+        except ValueError:
+            print("Only numbers accepted. Hit again: \n")
 
-
-
-
-
+def start_game():
+    """
+    Initiates the game.
+    """
+    global board
+    play = True
+    board = ["",
+             " ", " ", " ",
+             " ", " ", " ",
+             " ", " ", " ",]
+    player = 'x'
+    computer = 'o'
+    draw_board()
+    
 main_menu()
