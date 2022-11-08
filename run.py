@@ -3,11 +3,9 @@ import os  # for the underlying os interaction
 import sys  # for built-in modules
 
 print("\n")
-print("_/_/_/_/_/ _/_/_/   _/_/_/      _/_/_/_/_/   _/_/     _/_/_/      _/_/_/_/_/   _/_/   _/_/_/_/")
-print("   _/       _/   _/                _/     _/    _/ _/                _/     _/    _/ _/")  
-print("  _/       _/   _/    _/_/_/_/_/  _/     _/_/_/_/ _     _/_/_/_/_/  _/     _/    _/ _/_/_/")       
-print(" _/       _/   _/                _/     _/    _/ _/                _/     _/    _/ _/")            
-print("_/     _/_/_/   _/_/_/          _/     _/    _/   _/_/_/          _/       _/_/   _/_/_/_/") 
+print("|_   _| |/ _/_|_   _/  \ / _/_|_   _/__\| __|")
+print("  | | | | \_|__|| || /\ | \_|__|| || \/ | _| ")
+print("  |_| |_|\__/   |_||_||_|\__/   |_| \__/|___|")
 print("\n")
 
 
@@ -73,7 +71,7 @@ def rules():
     print("_1_|_2_|_3_")
     print("_4_|_5_|_6_")
     print(" 7 | 8 | 9 ")
-    print("\nThe first player to get 3 of the marks in a row (up, down, across, or diagonally) is the winner.\n")
+    print("\nThe first player to get 3 of the marks in a row (up-down, across, or diagonally) is the winner.\n")
     print("When all 9 squares are full, the game is over.q")
     time.sleep(1)
     while True:
