@@ -2,6 +2,13 @@ import time  # time delay for game intro
 import os # for the underlying os interaction
 import sys # for built-in modules
 
+print("\n")
+print(" __ __|_ _|  ___|        __ __|  \     ___|        __ __| _ \  ____|")
+print("    |    |  |               |   _ \   |               |  |   | __|  ")
+print("    |    |  |     _____|    |  ___ \  |     _____|    |  |   | |    ")
+print("   _|  ___|\____|          _|_/    _\\____|          _| \___/ _____|")
+print("\n")
+
 def message(text):
     """
     Prints out a message with a time delay.
@@ -206,6 +213,7 @@ def start_game():
     """
     Initiates the actual game.
     """
+    cls()
     global board
     play = True
     board = ["",
