@@ -92,3 +92,7 @@ The deployment is made using [Heroku](https://www.heroku.com/) following the lis
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) provided in the Code Institute     Template.
 
 ## Credits
+
+- I've used another student's Tic Tac Toe project as a reference [Link to GitHub](https://github.com/aimansae/p3-tic-tac-toe).
+- A few questions were solved during the communication with other students in Slack.
+- Browsing through the internet helped find great solutions and fix bugs e.g. [GeeksforGeeks](https://www.geeksforgeeks.org/), [Stack Overflow](https://stackoverflow.com/), [ASCII Generator](https://www.ascii-art-generator.org/) to create an intro image and [PEP8](https://pep8.org/) to make the code look nice a clean.
