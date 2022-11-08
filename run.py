@@ -141,6 +141,27 @@ def is_winning(hit,board):
         if board[option[0]] == board[option[1]] == board[option[2]] == hit:
             return True
 
+
+def who_won(player, computer):
+    """
+    Checks if either player or won
+    """
+    win_option = [[1,4,7],[2,5,8],[3,6,9],[1,2,3],[4,5,6],[7,8,9],[1,5,9],[3,5,7]]
+    for option in win_option:
+        if board[option[0]] == board[option[1]] == board[option[2]] == player:
+            print(f'Congratulations! You won this one!')
+            if not restart_game():
+                return False
+        elif board[option[0]] == board[option[1]] == board[option[2]] == computer:
+            print('Computer won this game. Better Luck next time!')
+            if not restart_game():
+                return False
+    if ' ' not in board:
+        print("It's a draw!")
+        if not restart_game():
+            return False
+    return True
+
 def start_game():
     """
     Initiates the game.
