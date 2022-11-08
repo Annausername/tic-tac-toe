@@ -141,6 +141,17 @@ def is_winning(hit,board):
         if board[option[0]] == board[option[1]] == board[option[2]] == hit:
             return True
 
+def win_hit(cell,board,computer):
+    """
+    Creates a temporary board and inserts a computer move to check if it is a win one.
+    """
+    copy_board = list(board)
+    copy_board[cell] = computer
+    if is_winning(computer,copy_board):
+        return True
+    else:
+        return False
+
 def computer_move(computer, player, board):
     """
     Makes a computer move taking into consideration the win move.
