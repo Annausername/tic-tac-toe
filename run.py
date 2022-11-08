@@ -3,10 +3,11 @@ import os  # for the underlying os interaction
 import sys  # for built-in modules
 
 print("\n")
-print(" __ __|_ _|  ___|        __ __|  \     ___|        __ __| _ \  ____|")
-print("    |    |  |               |   _ \   |               |  |   | __|  ")
-print("    |    |  |     _____|    |  ___ \  |     _____|    |  |   | |    ")
-print("   _|  ___|\____|          _|_/    _\\____|          _| \___/ _____|")
+print("_/_/_/_/_/ _/_/_/   _/_/_/      _/_/_/_/_/   _/_/     _/_/_/      _/_/_/_/_/   _/_/   _/_/_/_/")
+print("   _/       _/   _/                _/     _/    _/ _/                _/     _/    _/ _/")  
+print("  _/       _/   _/    _/_/_/_/_/  _/     _/_/_/_/ _     _/_/_/_/_/  _/     _/    _/ _/_/_/")       
+print(" _/       _/   _/                _/     _/    _/ _/                _/     _/    _/ _/")            
+print("_/     _/_/_/   _/_/_/          _/     _/    _/   _/_/_/          _/       _/_/   _/_/_/_/") 
 print("\n")
 
 
@@ -68,16 +69,15 @@ def rules():
     print("The game is played on a grid that's 3 squares by 3 squares.\n")
     print("You are 'x', the computer is 'o'.\n")
     print("You are the one to hit first by choosing the cell number.\n")
-    print("Your hit should be a number between 1 and 9.\n")
+    print("Your hit should be a number between 1 and 9:")
     print("_1_|_2_|_3_")
     print("_4_|_5_|_6_")
     print(" 7 | 8 | 9 ")
-    print("\nThe first player to get 3 of the marks in a row")
-    print("(up, down, across, or diagonally) is the winner.\n")
-    print("When all 9 squares are full, the game is over.\n")
+    print("\nThe first player to get 3 of the marks in a row (up, down, across, or diagonally) is the winner.\n")
+    print("When all 9 squares are full, the game is over.q")
     time.sleep(1)
     while True:
-        print('Shall we proceed?\n')
+        print('__________________________________________________\n')
         print('Enter start to play the game;')
         print('home to return to the main menu;')
         print('or quit if you want to exit the app!')
