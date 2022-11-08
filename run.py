@@ -46,7 +46,7 @@ def main_menu():
         print('\nEnter start to play Tic-Tac-Toe;')
         print('help to read game rules;')
         print('or quit if you want to leave :(')
-        choice = input("\nWhat is the next stop?: ")
+        choice = input("\nWhat is the next stop?: \n")
         if choice in ["Quit", "quit", "Q", "q"]:
             quit_app()
         elif choice in ["Help", "help", "H", "h"]:
@@ -81,7 +81,7 @@ def rules():
         print('Enter start to play the game;')
         print('home to return to the main menu;')
         print('or quit if you want to exit the app!')
-        choice = input("\nPlese select an option: ")
+        choice = input("\nPlese select an option: \n")
         if choice in ["Quit", "quit", "Q", "q"]:
             quit_app()
         elif choice in ["Home", "home", "H", "h"]:
@@ -112,7 +112,7 @@ def quit_app():
     """
     print("\nDo you really want to quit?")
     while True:
-        choice = input("yes/no: ")
+        choice = input("yes/no: \n")
         if choice in ["yes", "Yes", "y", "Y"]:
             message("\nSorry you are leaving. Come back to play again!\n")
             quit()
@@ -196,7 +196,7 @@ def restart_game():
     Gives an option for restarting the game or quitting an app.
     """
     while True:
-        choice = input('Do you want to play again?:')
+        choice = input('Do you want to play again?:\n')
         if choice in ['yes', 'Yes', 'y', 'Y']:
             print("\nLet's play another round!")
             start_game()
