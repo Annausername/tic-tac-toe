@@ -132,6 +132,15 @@ def player_move(hit):
         except ValueError:
             print("Only numbers accepted. Hit again: \n")
 
+def is_winning(hit,board):
+    """
+    Checks all the possible variants for the win of all players.
+    """
+    win_option = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
+    for option in win_option:
+        if board[option[0]] == board[option[1]] == board[option[2]] == hit:
+            return True
+
 def start_game():
     """
     Initiates the game.
@@ -145,5 +154,10 @@ def start_game():
     player = 'x'
     computer = 'o'
     draw_board()
+    while play:
+        x = player_move(player)
+        board[x] = player
+        draw_board()
+
     
 main_menu()
