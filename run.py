@@ -75,5 +75,11 @@ def rules():
         else:
             wrong_input(choice)
 
+def cls():
+    """
+    Clears the terminal window.
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 main_menu()
