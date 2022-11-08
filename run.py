@@ -20,7 +20,7 @@ def message(text):
     time.sleep(1)
 
 
-message("Welcome to the classic Tic-Tac-Toe game (also called Noughts and Crosses) ^‿◕\n")
+message("Welcome to the classic Tic-Tac-Toe game ^‿◕\n")
 
 
 def player_name():
@@ -71,8 +71,8 @@ def rules():
     print("_1_|_2_|_3_")
     print("_4_|_5_|_6_")
     print(" 7 | 8 | 9 ")
-    print("\nThe first player to get 3 of the marks in a row (up-down, across, or diagonally) is the winner.\n")
-    print("When all 9 squares are full, the game is over.q")
+    print("\nThe first player to get 3 of the marks in a row is the winner.\n")
+    print("When all 9 squares are full, the game is over.")
     time.sleep(1)
     while True:
         print('__________________________________________________\n')
