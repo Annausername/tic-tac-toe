@@ -141,6 +141,20 @@ def is_winning(hit,board):
         if board[option[0]] == board[option[1]] == board[option[2]] == hit:
             return True
 
+def computer_move(computer, player, board):
+    """
+    Makes a computer move taking into consideration the win move.
+    """
+    for cell in range(1,10):
+        if board[cell] == ' ' and win_hit(cell,board,computer):
+            return cell
+    for cell in range(1,10):
+        if board[cell] == ' ' and win_hit(cell,board,player):
+            return cell
+    for cell in [5,1,7,3,2,9,8,6,4]:
+        if board[cell] == ' ':
+            return cell
+
 def restart_game():
     """
     Gives an option for restarting the game or quitting an app.
@@ -194,6 +208,7 @@ def start_game():
         x = player_move(player)
         board[x] = player
         draw_board()
+        play = who_won(player, computer)
 
     
 main_menu()
