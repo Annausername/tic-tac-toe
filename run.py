@@ -68,7 +68,7 @@ def rules():
     print("When all 9 squares are full, the game is over.\n")
     time.sleep(1)
     while True:
-        print('\nShall we proceed?\n')
+        print('Shall we proceed?\n')
         print('Enter start to play the game;')
         print('home to return to the main menu;')
         print('or quit if you want to exit the app!')
@@ -234,5 +234,4 @@ def start_game():
         draw_board()
         play = who_won(player, computer)
 
-    
 main_menu()
