@@ -43,6 +43,37 @@ def main_menu():
         else:
             wrong_input(choice)
 
+def rules():
+   """
+   Prints out game rules for the player.
+   Gives options to either starting the game, exiting the app or going back to the main menu.
+   """
+   cls()
+   time.sleep(0.5)
+   print("The game is played on a grid that's 3 squares by 3 squares.\n")
+   print("You are 'x', the computer is 'o'.\n")
+   print("You are the one to hit first by choosing the cell number for your move.\n")
+   print("Your hit should be a number between 1 and 9, starting to count horizontally.\n")
+   print("_1_|_2_|_3_")
+   print("_4_|_5_|_6_")
+   print(" 7 | 8 | 9 ")
+   print("\nThe first player to get 3 of the marks in a row (up, down, across, or diagonally) is the winner.\n")
+   print("When all 9 squares are full, the game is over.\n")
+   time.sleep(1)
+   while True:
+       print('\nShall we proceed?\n')
+       print('Enter start to play the game;')
+       print('home to return to the main menu;')
+       print('or quit if you want to exit the app!')
+       choice = input("\nPlese select an option: ")
+       if choice in ["Quit", "quit", "Q", "q"]:
+           quit_app()
+       elif choice in ["Home", "home", "H", "h"]:
+           main_menu()
+       elif choice in ["Start", "start", "S", "s"]:
+           start_game()
+       else:
+           wrong_input(choice)
 
 
 main_menu()
