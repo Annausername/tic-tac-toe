@@ -87,5 +87,20 @@ def wrong_input(choice):
     """
     print('Please enter the required option.')
 
+def quit_app():
+    """
+    Exits the app with a confirmation question.
+    """
+    print("\nDo you really want to quit?")
+    while True:
+        choice = input("yes/no: ")
+        if choice in ["yes", "Yes", "y", "Y"]:
+            message("\nSorry you are leaving. Come back to play again!\n")
+            quit()
+        elif choice in ["no", "No", "N", "n"]:
+            break
+        else:
+            wrong_input(choice)
+
 
 main_menu()
