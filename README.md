@@ -47,8 +47,31 @@ __As a player__
   Rules section appears with cleaning the terminal window, rules, and 3 options of starting the game, heading over back to the main menu and quitting the app.
   
 ![Rules](https://github.com/Annausername/tic-tac-toe/blob/main/media/Rules.png)  
+  
+## Start Game
 
+  Having clicked start game, a player sees a printed out empty board and an input field to      make a move first (validating the input).
+  
+![Start game](https://github.com/Annausername/tic-tac-toe/blob/main/media/start.png)  
 
+  After the first move by a player, the new board with the actual hit has been printed out.
+The computer's move has been printed out afterwards, and the player has been offered to make another move (validating the input and checks for the occupied cells).
+
+![Move](https://github.com/Annausername/tic-tac-toe/blob/main/media/move.png) 
+
+## End Game
+
+  The game ends when either first player(or computer) get 3s of the marks in a row or all 9 squares are full. The player afterwards is given an option to either restart the game of quit the app.
+  
+![End Game](https://github.com/Annausername/tic-tac-toe/blob/main/media/end%20game.png)  
+
+## Quit app
+
+  The option of quitting app has a confirmation question to make sure it was not a mistake       enter, and a goodbye message. The last sentence has a sys.stdout.flush() method applied for   a better visual effect. 
+
+![Quit](https://github.com/Annausername/tic-tac-toe/blob/main/media/Exit.png)
+
+*each input has a validation for the correct input type, however, if it is a word it includes capitalization, and the first letter enter (e.g. "Start" -> "Start", "start", "s", "S").
   
 ### Testing 
 
@@ -59,7 +82,7 @@ __As a player__
 - Entered the "linter" into the search bar that appeared, and clicked on Python: Selected     Linter from the filtered.
 - Select pycodestyle from the list.
 
-  PEP8 didn't ahow any errors underlined in red, but I saw the list in the PROBLEMS tab beside the terminal.
+  PEP3 didn't ahow any errors underlined in red, but I saw the list in the PROBLEMS tab beside the terminal.
   
 ![Problems](https://github.com/Annausername/tic-tac-toe/blob/main/media/Errors.png)
 
