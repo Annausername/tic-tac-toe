@@ -49,19 +49,28 @@ __As a player__
 ![Rules](https://github.com/Annausername/tic-tac-toe/blob/main/media/Rules.png)  
 
 
-
   
 ### Testing 
 
+  Since pep8online.com is currently down. I've used a PEP8 validator installed to the Gitpod Workspace directly by following these steps:
+  
+- Run the command pip3 and installed pycodestyle.
+- In the workspace, pressed Cmd+Shift+P since in on Mac.
+- Entered the "linter" into the search bar that appeared, and clicked on Python: Selected     Linter from the filtered.
+- Select pycodestyle from the list.
+
+  PEP8 didn't ahow any errors underlined in red, but I saw the list in the PROBLEMS tab beside the terminal.
+  
+![Problems](https://github.com/Annausername/tic-tac-toe/blob/main/media/Errors.png)
+
+  In the list above there are 3 problems where the lines are too long, however, this is the part of the code to count the win moves, so I ended up leaving this as it is, and a valid escape sequence for the ASCII logo (never changed it either).
 
 - __Bugs__
 
 Solved bugs
 
- - Footer was not sticky and would always raise to the middle of the page. I had to use a container "wrapper" with a value of min-height to push the footer down.
-- Two main images to display as column in a responsive version with a help of css property "display : contents;".
-- Community background image doesn't fit the mobile version, so it was removed from the screen size width of 1235px and down. 
-- The Community section was not centered on the screen size width from 1000px to 540px, so it was given a property of "width : fit-content".
+ - The function main_menu() was called right after it was defined, so the game couldn't launch    properly. Fixed this by calling it at the end.
+ - Used another algorythm to count the win first breaking them up by functions to check          columns, rows, and diagonals. It took a lot of lines of code and wouldn't works properly,      so I replaced them with one line (which shows up as problem in PIP3 due to the length) to      check all variants at once.
 
 ## Deployment
 
