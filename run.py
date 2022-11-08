@@ -13,6 +13,7 @@ def message(text):
     time.sleep(1)
 
 message("Welcome to the classic Tic-Tac-Toe game (also called Noughts and Crosses) ^‿◕\n")
+
 def player_name():
     """
     Gets a player name and prints out a welcome message.
@@ -22,3 +23,26 @@ def player_name():
         print(f"\nLet's roll, {name}!")
         break
 player_name()
+
+def main_menu():
+    """
+    Gives a player 3 options of running the game,
+    reading the rules or exiting the app.
+    """
+    while True:
+        print('\nEnter start to play Tic-Tac-Toe;')
+        print('help to read game rules;')
+        print('or quit if you want to leave :(')
+        choice = input("\nWhat is the next stop?: ")
+        if choice in ["Quit", "quit", "Q", "q"]:
+            quit_app()
+        elif choice in ["Help", "help", "H", "h"]:
+            rules()
+        elif choice in ["Start", "start", "S", "s"]:
+            start_game()
+        else:
+            wrong_input(choice)
+
+
+
+main_menu()
