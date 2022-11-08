@@ -141,6 +141,21 @@ def is_winning(hit,board):
         if board[option[0]] == board[option[1]] == board[option[2]] == hit:
             return True
 
+def restart_game():
+    """
+    Gives an option for restarting the game or quitting an app.
+    """
+    while True:
+        choice = input('Do you want to play again?:')
+        if choice in ['yes','Yes', 'y', 'Y']:
+            print("\nLet's play another round!")
+            start_game()
+        elif choice in ['no','No', 'n', 'N']:
+            quit_app()
+        else:
+            wrong_input(choice)
+    else:
+        return False
 
 def who_won(player, computer):
     """
@@ -164,7 +179,7 @@ def who_won(player, computer):
 
 def start_game():
     """
-    Initiates the game.
+    Initiates the actual game.
     """
     global board
     play = True
